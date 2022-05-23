@@ -28,6 +28,7 @@
   left: 100px;
   top: 72px;
   border-radius: 0px;
+  background-size: cover;
 }
 .menu {
   display: flex;
@@ -53,6 +54,7 @@
   justify-content: left;
   flex-direction: column;
   width: 100%;
+  flex-wrap: nowrap;
 }
 .divTextos {
   display: flex;

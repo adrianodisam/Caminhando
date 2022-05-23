@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Sobre.module.css';
 import ajudaImg from '../imgs/002-heart 3.png';
+import CardsSobre from './CardsSobre';
 const Sobre = () => {
   return (
     <div className={styles.sobre}>
@@ -9,19 +10,21 @@ const Sobre = () => {
         <p className={styles.instSobre}>Conheça a instituição </p>
       </div>
       <div className={styles.divSobreCard}>
-        <div className={styles.sobreCard}>
-          <img src={ajudaImg} alt="" />
-
-          <p>Ajude a instituição</p>
-        </div>
-        <div className={styles.sobreCard}>
-          <img src={ajudaImg} alt="" />
-          <p>Nossos projetos</p>
-        </div>
-        <div className={styles.sobreCard}>
-          <img src={ajudaImg} alt="" />
-          <p>quem somos</p>
-        </div>
+        <CardsSobre
+          imagem={ajudaImg}
+          texto="Nossos projetos"
+          cores={styles.divSobre}
+        />
+        <CardsSobre
+          imagem={ajudaImg}
+          texto="Nossos projetos"
+          cores={styles.divSobre}
+        />
+        <CardsSobre
+          imagem={ajudaImg}
+          texto="Nossos projetos"
+          cores={styles.divSobre}
+        />
       </div>
     </div>
   );
